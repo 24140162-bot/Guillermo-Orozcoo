@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guillermo Orozco - Cantante</title>
+
+<link rel="icon" type="image/png" href="logogogo.png">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+body{
+    background-color:#141414;
+    font-family:'Segoe UI', sans-serif;
+    margin:0;
+    padding:0;
+    color:white;
+}
+
+/* NAVBAR */
+.navbar{
+    background: linear-gradient(90deg,#e10600,#000000) !important;
+    box-shadow:0 0 20px rgba(255,0,0,0.4);
+}
+
+.navbar-brand{
+    font-weight:bold;
+    font-size:1.4rem;
+    color:#ffcc00 !important;
+    display:flex;
+    align-items:center;
+}
+
+.navbar-brand img{
+    height:55px;
+    margin-right:12px;
+    transition:0.3s;
+}
+
+.navbar-brand img:hover{
+    transform:scale(1.1);
+}
+
+.nav-link{
+    color:white !important;
+    margin:0 12px;
+    font-weight:500;
+}
+
+.nav-link:hover{
+    color:#ffcc00 !important;
+}
+
+/* HERO FULL SCREEN */
+.hero{
+    position:relative;
+    height:100vh;
+    width:100%;
+    overflow:hidden;
+    padding:0 !important;
+}
+
+#carouselHero,
+.carousel-inner,
+.carousel-item{
+    height:100vh;
+}
+
+.carousel-item img{
+    height:100vh;
+    width:100%;
+    object-fit:cover;
+    filter:brightness(60%);
+}
+
+/* TEXTO ENCIMA */
+.hero-content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    z-index:10;
+    width:90%;
+}
+
+.hero-content h1{
+    font-size:4.5rem;
+    font-weight:900;
+    color:#ffcc00;
+    text-shadow:0 0 25px rgba(255,204,0,0.9);
+    letter-spacing:4px;
+}
+
+.hero-content p{
+    font-size:1.4rem;
+    margin-top:20px;
+}
+
+.hero-content .btn{
+    margin-top:30px;
+    background:#ff2e2e;
+    border:none;
+    padding:15px 45px;
+    font-weight:bold;
+    color:white;
+    box-shadow:0 0 20px rgba(255,0,0,0.7);
+}
+
+.hero-content .btn:hover{
+    background:#e10600;
+}
+
+/* SECCIONES */
+section{
+    padding:100px 10%;
+}
+
+section h2{
+    text-align:center;
+    color:#ffcc00;
+    margin-bottom:50px;
+}
+
+/* CARDS */
+.card{
+    background:#1f1f1f;
+    border:none;
+    border-radius:18px;
+    color:white;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px rgba(255,0,0,0.5);
+}
+
+.btn-primary{
+    background:#ff2e2e;
+    border:none;
+}
+
+.btn-primary:hover{
+    background:#e10600;
+}
+
+/* FOOTER */
+footer{
+    background:#000;
+    text-align:center;
+    padding:30px;
+    color:#ffcc00;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+<div class="container">
+<a class="navbar-brand" href="index.html">
+<img src="logogogo.png" alt="Logo">
+Guillermo Orozco
+</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+<ul class="navbar-nav">
+<li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+<li class="nav-item"><a class="nav-link" href="index3.html">Música</a></li>
+<li class="nav-item"><a class="nav-link" href="index2.html">Eventos</a></li>
+<li class="nav-item"><a class="nav-link" href="index4.html">Contacto</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- HERO CON SLIDE -->
+<section class="hero">
+
+<div id="carouselHero" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
+
+<div class="carousel-inner">
+
+<div class="carousel-item active">
+<img src="guill.jfif" class="d-block w-100" alt="Guillermo 1">
+</div>
+
+<div class="carousel-item">
+<img src="guill2.jfif" class="d-block w-100" alt="Guillermo 2">
+</div>
+
+<div class="carousel-item">
+<img src="guill3.jfif" class="d-block w-100" alt="Guillermo 3">
+</div>
+
+<div class="carousel-item">
+<img src="guill4.jpg" class="d-block w-100" alt="Guillermo 4">
+</div>
+
+</div>
+
+</div>
+
+<div class="hero-content">
+<h1>GUILLERMO OROZCO</h1>
+<p>"La voz que nace del alma para contar las historias que las palabras comunes no alcanzan a expresar."</p>
+
+<a href="https://www.youtube.com/@Guillermoorozcocantante" 
+   target="_blank"
+   class="btn btn-lg">
+   Escuchar Ahora
+</a>
+
+</div>
+
+</section>
+
+<section>
+<h2>Próximos Conciertos</h2>
+<div class="row g-4">
+
+<div class="col-md-4">
+<div class="card p-4">
+<h5>CDMX</h5>
+<p>20 Octubre 2026</p>
+<a href="#" class="btn btn-primary">Boletos</a>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card p-4">
+<h5>Guadalajara</h5>
+<p>5 Noviembre 2026</p>
+<a href="#" class="btn btn-primary">Boletos</a>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card p-4">
+<h5>Monterrey</h5>
+<p>18 Noviembre 2026</p>
+<a href="#" class="btn btn-primary">Boletos</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<footer>
+© 2026 Guillermo Orozco | Todos los derechos reservados
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

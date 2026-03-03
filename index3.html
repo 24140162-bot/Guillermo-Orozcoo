@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guillermo Orozco - Música</title>
+
+<link rel="icon" type="image/png" href="logogogo.png">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+body{
+    background-color:#141414;
+    font-family:'Segoe UI', sans-serif;
+    margin:0;
+    padding:0;
+    color:white;
+}
+
+/* NAVBAR */
+.navbar{
+    background: linear-gradient(90deg,#e10600,#000000) !important;
+    box-shadow:0 0 20px rgba(255,0,0,0.4);
+}
+
+.navbar-brand{
+    font-weight:bold;
+    font-size:1.4rem;
+    color:#ffcc00 !important;
+    display:flex;
+    align-items:center;
+}
+
+.navbar-brand img{
+    height:55px;
+    margin-right:12px;
+    transition:0.3s;
+}
+
+.navbar-brand img:hover{
+    transform:scale(1.1);
+}
+
+.nav-link{
+    color:white !important;
+    margin:0 12px;
+    font-weight:500;
+}
+
+.nav-link:hover{
+    color:#ffcc00 !important;
+}
+
+.nav-link.active{
+    color:#ffcc00 !important;
+    font-weight:bold;
+}
+
+/* SECCIÓN YOUTUBE FULL */
+.youtube-section{
+    margin-top:90px;
+    min-height:100vh;
+    width:100%;
+    background: linear-gradient(180deg,#111,#000);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+    text-align:center;
+}
+
+.youtube-section h2{
+    color:#ffcc00;
+    font-size:3rem;
+    margin-bottom:40px;
+}
+
+.youtube-container{
+    width:100%;
+    max-width:1200px;
+    height:70vh;
+    box-shadow:0 0 40px rgba(255,0,0,0.5);
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.youtube-container iframe{
+    width:100%;
+    height:100%;
+    border:none;
+}
+
+/* BOTÓN YOUTUBE */
+.youtube-btn{
+    margin-top:40px;
+    background:#ff0000;
+    padding:15px 50px;
+    border-radius:10px;
+    font-size:1.2rem;
+    font-weight:bold;
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+    box-shadow:0 0 20px rgba(255,0,0,0.6);
+}
+
+.youtube-btn:hover{
+    background:#cc0000;
+    transform:scale(1.05);
+}
+
+/* FOOTER */
+footer{
+    background:#000;
+    text-align:center;
+    padding:30px;
+    color:#ffcc00;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+<div class="container">
+<a class="navbar-brand" href="index.html">
+<img src="logogogo.png" alt="Logo">
+Guillermo Orozco
+</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+<ul class="navbar-nav">
+<li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+<li class="nav-item"><a class="nav-link active" href="index3.html">Música</a></li>
+<li class="nav-item"><a class="nav-link" href="index2.html">Eventos</a></li>
+<li class="nav-item"><a class="nav-link" href="index4.html">Contacto</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- SECCIÓN YOUTUBE -->
+<section class="youtube-section">
+<h2>Último Lanzamiento</h2>
+
+<div class="youtube-container">
+<iframe 
+src="https://www.youtube.com/embed/qforE5sD_18"
+allowfullscreen>
+</iframe>
+</div>
+
+<a href="https://www.youtube.com/@Guillermoorozcocantante" 
+target="_blank" 
+class="youtube-btn">
+Ver Canal Oficial en YouTube
+</a>
+
+</section>
+
+<footer>
+© 2026 Guillermo Orozco | Todos los derechos reservados
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

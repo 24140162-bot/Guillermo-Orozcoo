@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guillermo Orozco - Eventos</title>
+
+<link rel="icon" type="image/png" href="logogogo.png">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+body{
+    background:#111;
+    font-family:'Segoe UI', sans-serif;
+    margin:0;
+    padding:0;
+    color:white;
+}
+
+/* NAVBAR */
+.navbar{
+    background: linear-gradient(90deg,#e10600,#000000) !important;
+}
+
+.navbar-brand{
+    font-weight:bold;
+    color:#ffcc00 !important;
+}
+
+.nav-link{
+    color:white !important;
+    margin:0 12px;
+}
+
+.nav-link:hover{
+    color:#ffcc00 !important;
+}
+
+.nav-link.active{
+    color:#ffcc00 !important;
+    font-weight:bold;
+}
+
+/* SECCIÓN */
+.tour-section{
+    padding:120px 8%;
+}
+
+.tour-section h2{
+    text-align:center;
+    color:#ffcc00;
+    margin-bottom:60px;
+    font-size:2.5rem;
+}
+
+/* TARJETA CON IMAGEN COMPLETA */
+.event-card{
+    position:relative;
+    border-radius:20px;
+    overflow:hidden;
+    margin-bottom:40px;
+    box-shadow:0 0 25px rgba(255,0,0,0.4);
+    transition:0.3s;
+}
+
+.event-card:hover{
+    transform:scale(1.02);
+}
+
+/* IMAGEN */
+.event-card img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+}
+
+/* CAPA OSCURA PARA QUE EL TEXTO SE LEA */
+.event-overlay{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    background:linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0.1));
+    padding:25px;
+    text-align:center;
+}
+
+/* TEXTO */
+.event-overlay h4{
+    color:#ffcc00;
+    margin-bottom:5px;
+}
+
+.event-overlay p{
+    margin:3px 0;
+    font-size:0.95rem;
+}
+
+/* BOTÓN */
+.ticket-btn{
+    background:#ff2e2e;
+    border:none;
+    padding:10px 25px;
+    border-radius:6px;
+    color:white;
+    font-weight:bold;
+    text-decoration:none;
+    display:inline-block;
+    margin-top:12px;
+    transition:0.3s;
+}
+
+.ticket-btn:hover{
+    background:#e10600;
+}
+
+/* FOOTER */
+footer{
+    background:#000;
+    text-align:center;
+    padding:25px;
+    color:#ffcc00;
+    margin-top:50px;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+<div class="container">
+<a class="navbar-brand" href="index.html">Guillermo Orozco</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+<ul class="navbar-nav">
+<li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+<li class="nav-item"><a class="nav-link" href="index3.html">Música</a></li>
+<li class="nav-item"><a class="nav-link active" href="index2.html">Eventos</a></li>
+<li class="nav-item"><a class="nav-link" href="index4.html">Contacto</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<section class="tour-section">
+<h2>Próximos Eventos</h2>
+
+<div class="container">
+<div class="row">
+
+<!-- EVENTO 1 -->
+<div class="col-md-6">
+<div class="event-card">
+<img src="evento1.jpeg" alt="Capilla San Salvador">
+<div class="event-overlay">
+<h4>Capilla San Salvador Nextengo</h4>
+<p>15 de Marzo | 4:00 pm - 6:00 pm</p>
+<a href="https://www.google.com/maps/place/Capilla+del+Divino+Salvador+de+Nextengo/@19.472668,-99.1910053,17z/data=!3m1!4b1!4m6!3m5!1s0x85d1f8818d98e52b:0x366f87b7b2c7d7b2!8m2!3d19.472663!4d-99.1884304!16s%2Fg%2F11tfk_bpw4?entry=ttu&g_ep=EgoyMDI2MDIyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="ticket-btn">Ver ubicación</a>
+</div>
+</div>
+</div>
+
+<!-- EVENTO 2 -->
+<div class="col-md-6">
+<div class="event-card">
+<img src="evento2.jpeg" alt="Festival de Primavera">
+<div class="event-overlay">
+<h4>Festival de Primavera</h4>
+<p>28 de Marzo | 3:00 pm</p>
+<p>Centro Comercial Pabellón Azcapotzalco</p>
+<a href="https://www.google.com/maps/place/Pabell%C3%B3n+Azcapotzalco/@19.4735125,-99.1923726,17z/data=!3m2!4b1!5s0x85d1f881de8e0099:0x4f74bb82de8a4547!4m6!3m5!1s0x85d1f881dfd26673:0x24b6723b2b8083ca!8m2!3d19.4735075!4d-99.1897977!16s%2Fg%2F11cksc3g96?entry=ttu&g_ep=EgoyMDI2MDIyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="ticket-btn">Ver ubicación</a>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+</section>
+
+<footer>
+© 2026 Guillermo Orozco | Todos los derechos reservados
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
